@@ -1,7 +1,7 @@
 What is auto-phylo?
 *******************
 
-**auto-phylo** is a pipeline maker software for phylogenetic studies. A Docker image is available is available at `this Docker Hub repository <https://hub.docker.com/r/pegi3s/auto-phylo>`_
+**auto-phylo** is a pipeline maker software for phylogenetic studies. A Docker image is available at `this Docker Hub repository <https://hub.docker.com/r/pegi3s/auto-phylo>`_.
 
 In order to run auto-phylo, Docker must be installed in a Linux system. 
 
