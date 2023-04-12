@@ -7,6 +7,7 @@ Welcome to the auto-phylo manual!
 
    overview
    script
+   test_data
 
 .. toctree::
    :maxdepth: 2
