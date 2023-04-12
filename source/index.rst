@@ -6,6 +6,7 @@ Welcome to the auto-phylo manual!
    :caption: Auto-Phylo
 
    overview
+   script
 
 .. toctree::
    :maxdepth: 2
