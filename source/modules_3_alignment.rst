@@ -1,0 +1,22 @@
+Alignment
+*********
+
+Clustal_Omega
+-------------
+
+This module accepts as input a single nucleotide FASTA file, and using the Clustal Omega [2] program, returns as output a single sequence alignment FASTA file.
+
+Clustal_Omega_codons
+--------------------
+
+This module accepts as input a single CDS FASTA file (sequences must not have stop codons), and returns as output a single sequence alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS transeq feature [3], and an amino acid alignment is obtained using Clustal_Omega [2]. Then, the corresponding nucleotide alignment is obtained using TranslatorX [4]. Therefore, this option is only suitable for FASTA files containing CDS, which is indicated by the "codons" suffix.  Sequences must not have stop codons.
+
+T-coffee
+--------
+
+This module accepts as input a single FASTA file, and using the T-coffee [10] program, returns as output a single sequence alignment FASTA file.
+
+T-coffee_codons
+---------------
+
+As indicated by the "codons" suffix, this module accepts as input a single CDS FASTA file (sequences must not have stop codons), and using the T-coffee [10] program, returns as output a single nucleotide alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS.
