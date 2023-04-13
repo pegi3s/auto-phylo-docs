@@ -7,9 +7,9 @@ The way FASTA files should be parsed to have the format desired by the user, dep
 user needs. Although, the module here provided for parsing CDS files downloaded from the NCBI Assembly database, 
 likely accommodates most user needs, the structure of a basic auto-phylo script is relatively simple as the figure
 below shows, and thus, even a researcher with very basic knowledge on bash scripting should be able to write a simple
-module for parsing the FASTA files, using SEDA-CLI operations. Assuming that such module is named my_module and that
-it is located in the working directory (``/your/data/dir``), it can be copied into the Docker image, and then be
-invoked as any other auto-phylo module, with the following command:
+module for parsing the FASTA files, using SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/). Assuming 
+that such module is named my_module and that it is located in the working directory (``/your/data/dir``), it can be
+copied into the Docker image, and then be invoked as any other auto-phylo module, with the following command:
 
 .. code-block:: shell-session
 
@@ -27,7 +27,7 @@ The following figure shows the basic structure of an auto-phylo script.
 Where:
 
 1. Command lines required by all auto-phylo scripts.
-2. Required if using SEDA-CLI operations.
+2. Required if using SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/).
 3. Informative message.
 4. Creates the directory where the result of the operation listed below will be saved. Do not forget to declare the ``$prefix`` variable.
 5. The name of the SEDA-CLI operation being invoked must be declared after ``$start`` (in the example, the rename-header-replace-word operation).
