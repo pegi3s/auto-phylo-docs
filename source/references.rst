@@ -1,6 +1,14 @@
 Bibliography
 ************
 
+.. Note::
+
+   If you use auto-phylo, please cite this publication:
+   
+   H. López-Fernández; M. Pinto; C.P. Vieira; P. Duque; M. Reboiro-Jato; J. Vieira (2023) `Auto-phylo: A Pipeline Maker 
+   for Phylogenetic Studies <https://doi.org/10.1007/978-3-031-38079-2_3>`_. 17th International Conference on Practical Applications of Computational Biology & Bioinformatics: 
+   PACBB 2023. Guimarães, Portugal. 12 - July
+
 1.	López-Fernández, H., et al., SEDA: a desktop tool suite for FASTA files processing. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 2020. 19(3): p. 1850-1860.
 2.	Sievers, F. and D.G. Higgins, Clustal omega. Current protocols in bioinformatics, 2014. 48(1): p. 3.13. 1-3.13. 16.
 3.	Rice, P., I. Longden, and A. Bleasby, EMBOSS: the European molecular biology open software suite. Trends in genetics, 2000. 16(6): p. 276-277.
