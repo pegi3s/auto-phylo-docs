@@ -13,6 +13,8 @@ In order to run auto-phylo, Docker must be installed in a Linux system.
    for Phylogenetic Studies <https://doi.org/10.1007/978-3-031-38079-2_3>`_. 17th International Conference on Practical Applications of Computational Biology & Bioinformatics: 
    PACBB 2023. Guimarães, Portugal. 12 - July
 
+.. _how-to-run:
+
 How to run auto-phylo
 *********************
 

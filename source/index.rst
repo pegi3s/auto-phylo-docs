@@ -8,6 +8,7 @@ Welcome to the auto-phylo manual!
    overview
    script
    test_data
+   pipeliner
 
 .. toctree::
    :maxdepth: 2
