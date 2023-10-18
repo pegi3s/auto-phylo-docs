@@ -1,9 +1,9 @@
-Welcome to the auto-phylo manual!
-=================================
+Welcome to the Auto-Phylo v2 manual!
+====================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Auto-Phylo
+   :caption: Auto-Phylo v2
 
    overview
    script
@@ -19,7 +19,10 @@ Welcome to the auto-phylo manual!
    modules_3_alignment
    modules_4_tree_building
    modules_5_model_checking
-   modules_6_special
+   modules_6_gene_annotation
+   modules_7_pss_detection
+   modules_8_divergence_estimates
+   modules_9_special
 
 .. toctree::
    :maxdepth: 2
