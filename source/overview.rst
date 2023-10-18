@@ -28,3 +28,7 @@ In this command, you should replace ``/your/data/dir`` to point to the directory
 
 - In the pipeline file you must specify the auto-phylo modules to be invoked as well as the input and output directory names (one per line). 
 - In the config file you must declare the path to the working directory as well as the SEDA version to be used, as well as any other parameters that are required by the modules being used.
+
+.. Note::
+   
+   Please, note that in auto-phylo v2, the module parameters are declared in a different way than in `auto-phylo v1 <http://evolution6.i3s.up.pt/static/auto-phylo/docs/>`_. Now, module names are used as parameter prefixes to avoid duplicated parameter names.
