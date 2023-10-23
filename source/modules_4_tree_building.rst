@@ -16,16 +16,6 @@ FastRoot
 
 This module accepts as input one Newick tree file, and using the FastRoot (https://github.com/uym2/MinVar-Rooting) program, returns as output a rooted tree also in Newick format. The rooting method to be used by this module must be specified in the config file (``fastroot_rooting_method=``). The values for this parameter can be either “MV" (Minimum Variance Rooting), “MP" (Midpoint Rooting), or “OG" (Outgroup Rooting). In the latter case, the parameter ``fastroot_outgroup=""`` must be defined in the config file (if present, the value attributed to this parameter is ignored when choosing ``fastroot_rooting_method=MV or MP``). If multiple outgroups are to be chosen, names should be separated by spaces. For instance, ``fastroot_outgroup="Name1 Name2"``.
 
-Mafft
------
-
-This module accepts as input a single nucleotide FASTA file, and using the MAFFT (https://mafft.cbrc.jp/alignment/software/) program, returns as output a single sequence alignment FASTA file. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed in order to remove line breaks from the resulting alignment.
-
-Mafft_codons
-------------
-
-This module accepts as input a single CDS FASTA file (sequences must not have stop codons), and returns as output a single sequence alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS transeq feature [3], and an amino acid alignment is obtained using MAFFT (https://mafft.cbrc.jp/alignment/software/). Then, the corresponding nucleotide alignment is obtained using TranslatorX [4]. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed in order to remove line breaks from the resulting alignments. This option is only suitable for FASTA files containing CDS, as indicated by the “codons" suffix.
-
 me_tree
 -------
 
@@ -50,21 +40,6 @@ nj_tree
 -------
 
 This module accepts as input a single nucleotide alignment in FASTA format, and using the Mega_CC [9] program, returns a neighbor-joining tree, in Newick format. The number of bootstraps to be executed, and how sites with alignment gaps should be treated, can be specified by declaring in the config file in two separate lines: ``nj_tree_bootstrap=positive_integer`` and ``nj_tree_treatment="Complete Deletion" or “Partial Deletion" or “Pairwise Deletion"``. In the mao file that is used to build the tree, and that is saved together with the intermediate files that are produced, the user can find all the settings that are being used.
-
-Probcons
---------
-
-This module accepts as input a single nucleotide FASTA file, and using the PROBCONS (http://probcons.stanford.edu/manual.pdf) program, returns as output a single sequence alignment FASTA file. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to reformat files.
-
-Probcons_codons
----------------
-
-This module accepts as input a single CDS FASTA file (sequences must not have stop codons), and returns as output a single sequence alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS transeq feature [3], and an amino acid alignment is obtained using PROBCONS [http://probcons.stanford.edu/manual.pdf]. Then, the corresponding nucleotide alignment is obtained using TranslatorX [4]. Therefore, this option is only suitable for FASTA files containing CDS, which is indicated by the “codons" suffix. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to reformat files.
-
-Probcons_refinement
--------------------
-
-This module accepts as input a single FASTA file containing aligned sequences, and using the PROBCONS (http://probcons.stanford.edu/manual.pdf) program refinement option, returns a refined FASTA file. The number of iterations (``probcons_refin_iterations=``) to be executed in the refinement must be specified in the config file.
 
 Rootdigger
 ----------

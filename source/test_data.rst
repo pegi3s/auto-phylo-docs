@@ -28,3 +28,4 @@ The following table summarizes the modules used in each test.
    :file: files/modules.csv
    :header-rows: 1
    :class: longtable
+
