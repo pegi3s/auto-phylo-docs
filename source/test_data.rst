@@ -17,3 +17,14 @@ There are several test sets available:
 To run them, just follow the instructions that are given on the ``README.txt`` file for each test case. 
 
 Specially, take care of the fact that the ``config`` file should be edited to put into ``dir`` the actual path to the test data directory in your computer.
+
+
+Modules used
+------------
+
+The following table summarizes the modules used in each test.
+
+.. csv-table::
+   :file: files/modules.csv
+   :header-rows: 1
+   :class: longtable
