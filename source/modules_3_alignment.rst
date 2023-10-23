@@ -4,7 +4,7 @@ Alignment
 Clustal_Omega
 -------------
 
-This module accepts as input a single nucleotide FASTA file, and using the Clustal Omega [2] program, returns as output a single sequence alignment FASTA file.
+This module accepts as input a single nucleotide FASTA file, and using the Clustal Omega [2] program, returns as output a single sequence alignment FASTA file. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to reformat files.
 
 Clustal_Omega_codons
 --------------------

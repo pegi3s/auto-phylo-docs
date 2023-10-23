@@ -1,3 +1,8 @@
+Modules configuration
+*********************
+
+It should be noted that in all cases the project directory (``dir=``) must be declared. Moreover, if SEDA-CLI operations are used, the SEDA version (``SEDA=``) should be declared as well.
+
 BLAST
 *****
 

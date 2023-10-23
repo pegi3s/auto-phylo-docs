@@ -4,7 +4,7 @@ Tree building
 get_phylo_taxa
 --------------
 
-This module is used to extract from a Newick file all taxa located in a given clade that is defined by two user specified sequence names (``get_phylo_taxa_name1=``; ``get_phylo_taxa_name2=``). Then, it produces an unaligned FASTA file containing the corresponding nucleotide sequences. Because it needs two inputs, both the nucleotide alignment file and the tree file must be in the same folder. The nucleotide alignment file must have the .nuc_aligned extension (the one attached by every alignment module to FASTA files). The tree file must have the .nwk extension (the one attached to the tree file by all tree producing modules).
+This module is used to extract from a Newick file all taxa located in a given clade that is defined by two user specified sequence names (``get_phylo_taxa_name1=``; ``get_phylo_taxa_name2=``). Then, it produces an unaligned FASTA file containing the corresponding nucleotide sequences. Because it needs two inputs, both the nucleotide alignment file and the tree file must be in the same folder. The nucleotide alignment file must have the .nuc_aligned extension (the one attached by every alignment module to FASTA files). The tree file must have the .nwk extension (the one attached to the tree file by all tree producing modules). SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to reformat files.
 
 Fasttree
 --------
@@ -54,12 +54,12 @@ This module accepts as input a single nucleotide alignment in FASTA format, and 
 Probcons
 --------
 
-This module accepts as input a single nucleotide FASTA file, and using the PROBCONS (http://probcons.stanford.edu/manual.pdf) program, returns as output a single sequence alignment FASTA file.
+This module accepts as input a single nucleotide FASTA file, and using the PROBCONS (http://probcons.stanford.edu/manual.pdf) program, returns as output a single sequence alignment FASTA file. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to reformat files.
 
 Probcons_codons
 ---------------
 
-This module accepts as input a single CDS FASTA file (sequences must not have stop codons), and returns as output a single sequence alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS transeq feature [3], and an amino acid alignment is obtained using PROBCONS [http://probcons.stanford.edu/manual.pdf]. Then, the corresponding nucleotide alignment is obtained using TranslatorX [4]. Therefore, this option is only suitable for FASTA files containing CDS, which is indicated by the “codons" suffix.
+This module accepts as input a single CDS FASTA file (sequences must not have stop codons), and returns as output a single sequence alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS transeq feature [3], and an amino acid alignment is obtained using PROBCONS [http://probcons.stanford.edu/manual.pdf]. Then, the corresponding nucleotide alignment is obtained using TranslatorX [4]. Therefore, this option is only suitable for FASTA files containing CDS, which is indicated by the “codons" suffix. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to reformat files.
 
 Probcons_refinement
 -------------------
@@ -74,7 +74,7 @@ This module accepts a nucleotide alignment file in FASTA format, as well as a Ne
 tree_collapser
 --------------
 
-Accepts as input a Newick tree file and returns a collapsed Newick tree using the Phylogenetic Tree Collapse (https://hub.docker.com/r/pegi3s/phylogenetic-tree-collapser) program. The sequence header names must start with the full species name.
+Accepts as input a Newick tree file and returns a collapsed Newick tree using the Phylogenetic Tree Collapse (https://hub.docker.com/r/pegi3s/phylogenetic-tree-collapser) program. The sequence header names must start with the full species name. If ``tc_taxonomy=""``, tree_collapse runs with default parameters, otherwise, the following parameters must be declared in the config file: the name of the file with the taxonomy to be used (``tc_taxonomy=``) and the name of the sequence mapping file (``tc_stsm=``).
 
 upgma_tree
 ----------

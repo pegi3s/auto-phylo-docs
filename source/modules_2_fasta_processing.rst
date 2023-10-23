@@ -8,7 +8,7 @@ This module accepts as input a single FASTA file containing one or multiple refe
 add_taxonomy
 ------------
 
-This module accepts as input one or multiple FASTA files downloaded from the NCBI assembly database, and adds taxonomy information to the headers of FASTA files, using the SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/), as long as the corresponding GCF or GCA accession number is part of the file name. This is achieved by querying NCBI, and thus, there is always the possibility that the internet connection will fail. In that case, the affected FASTA will be moved to the folder "2-Files_that_failed" under the corresponding block and command directory. It is advisable to check this folder. It returns as output as many FASTA files as the ones given as input.
+This module accepts as input one or multiple FASTA files downloaded from the NCBI assembly database, and adds taxonomy information to the headers of FASTA files, using the SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/), as long as the corresponding GCF or GCA accession number is part of the file name. This is achieved by querying NCBI, and thus, there is always the possibility that the internet connection will fail. In that case, the affected FASTA will be moved to the folder "2-Files_that_failed" under the corresponding block and command directory. It is advisable to check this folder. It returns as output as many FASTA files as the ones given as input. The parameter ``add_tax_taxonomy_header=`` must be declared in the config file (for instance, ``add_tax_taxonomy_header="Class Family"``).
 
 CGF_and_CGA_CDS_processing
 --------------------------
