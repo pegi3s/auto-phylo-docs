@@ -21,16 +21,7 @@ After the installation, you will have the command ``auto-phylo-pipeliner`` avail
 
    Initial state of auto-phylo-designer
 
-Alternatively, you can use the ``pegi3s/auto-phylo-pipeliner`` Docker image to run it using the following command (the current working directory will be mounted and used as working directory in the new container):
-
-.. code-block:: shell-session
-
-   docker run --rm -ti --user $(id -u):$(id -g) \
-      -e DISPLAY=$DISPLAY \
-      -v /tmp/.X11-unix:/tmp/.X11-unix \
-      -v $HOME/.Xauthority:/root/.Xauthority \
-      -v "${PWD}":"${PWD}" -w "${PWD}" \
-         pegi3s/auto-phylo-pipeliner
+Alternatively, you can use the ``pegi3s/auto-phylo-pipeliner`` Docker image to run it. To do so, use `this script <https://raw.githubusercontent.com/pegi3s/auto-phylo-pipeliner/master/resources/run-docker.sh>`_.
 
 Loading / Creating a pipeline
 -----------------------------
