@@ -3,7 +3,9 @@ What is auto-phylo?
 
 **auto-phylo** is a pipeline maker software for phylogenetic studies. A Docker image is available at `this Docker Hub repository <https://hub.docker.com/r/pegi3s/auto-phylo>`_.
 
-In order to run auto-phylo, Docker must be installed in a Linux system.
+**auto-phylo** consists in a series of scripts designed for bash and therefore Linux is required (it has not been tested in the Windows Subsystem for Linux, for instance). 
+
+In addition, it uses Docker images to run any third-party software, thus Docker must be installed (see the official installation instructions `at the Docker manual <https://docs.docker.com/engine/install/>`_).
 
 .. Note::
 
@@ -29,6 +31,8 @@ In this command, you should replace ``/your/data/dir`` to point to the directory
 - In the pipeline file you must specify the auto-phylo modules to be invoked as well as the input and output directory names (one per line). 
 - In the config file you must declare the path to the working directory as well as the SEDA version to be used, as well as any other parameters that are required by the modules being used.
 
+To help in the creation of such files and to ease pipeline design, a graphical user interface called **auto-phylo-pipeliner** (see :ref:`Pipeliner (GUI)`).
+
 .. Note::
    
-   Please, note that in auto-phylo v2, the module parameters are declared in a different way than in `auto-phylo v1 <http://evolution6.i3s.up.pt/static/auto-phylo/docs/>`_. Now, module names are used as parameter prefixes to avoid duplicated parameter names.
+   Please, note that in auto-phylo v2, the module parameters are declared in a different way than in `auto-phylo v1 <http://evolution6.i3s.up.pt/static/auto-phylo/v1/docs/>`_. Now, module names are used as parameter prefixes to avoid duplicated parameter names.

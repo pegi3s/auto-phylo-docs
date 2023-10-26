@@ -46,8 +46,8 @@ Rootdigger
 
 This module accepts a nucleotide alignment file in FASTA format, as well as a Newick tree file with the corresponding tree. Using Root Digger [6] program the tree is then rooted. Because it needs two inputs, both the nucleotide alignment file and the tree file must be in the same folder. The nucleotide alignment file must have the .nuc_aligned extension (the one attached by every alignment module to FASTA files). The tree file must have the .nwk extension (the one attached to the tree file by all tree producing modules). The Root Digger mode must be declared in the config file (``rootdigger_mode="exhaustive" or “early-stop"``). Please note that Root Digger does not allow white spaces or special characters other than underscores in sequence header names.
 
-tree_collapser
---------------
+tree_collapse
+-------------
 
 Accepts as input a Newick tree file and returns a collapsed Newick tree using the Phylogenetic Tree Collapse (https://hub.docker.com/r/pegi3s/phylogenetic-tree-collapser) program. The sequence header names must start with the full species name. If ``tc_taxonomy=""``, tree_collapse runs with default parameters, otherwise, the following parameters must be declared in the config file: the name of the file with the taxonomy to be used (``tc_taxonomy=``) and the name of the sequence mapping file (``tc_stsm=``).
 

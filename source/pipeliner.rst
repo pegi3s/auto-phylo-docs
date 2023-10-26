@@ -3,7 +3,6 @@ Pipeliner (GUI)
 
 For more comfortable creation of **auto-phylo** pipelines we have developed **auto-phylo-pipeliner**, a graphical interface that allows you to create or edit your pipelines without having to write a single line of code.
 
-
 Installation
 ------------
 
@@ -19,7 +18,7 @@ After the installation, you will have the command ``auto-phylo-pipeliner`` avail
    :align: center
    :width: 600px
 
-   Initial state of auto-phylo-designer
+   Initial state of auto-phylo-pipeliner
 
 Alternatively, you can use the ``pegi3s/auto-phylo-pipeliner`` Docker image to run it. To do so, use `this script <https://raw.githubusercontent.com/pegi3s/auto-phylo-pipeliner/master/resources/run-docker.sh>`_.
 
@@ -83,7 +82,7 @@ In addition, in this view you can:
 
 Viewing the pipeline
 --------------------
-While editing a pipeline, auto-phylo-designer will update the pipeline files (i.e. ``pipeline``, ``config``, or ``run.sh``) in the working directory. In the ``Pipeline`` and ``Configuration`` tabs you can view the contents of the pipeline and config files, respectively, at any time.
+While editing a pipeline, auto-phylo-pipeliner will update the pipeline files (i.e. ``pipeline``, ``config``, or ``run.sh``) in the working directory. In the ``Pipeline`` and ``Configuration`` tabs you can view the contents of the pipeline and config files, respectively, at any time.
 
 .. figure:: images/pipeliner/pipeline_view.png
    :align: center
