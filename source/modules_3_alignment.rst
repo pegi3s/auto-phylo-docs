@@ -19,7 +19,7 @@ This module accepts as input a single nucleotide FASTA file, and using the MAFFT
 Mafft_codons
 ------------
 
-This module accepts as input a single CDS FASTA file (sequences must not have stop codons), and returns as output a single sequence alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS transeq feature [3], and an amino acid alignment is obtained using MAFFT (https://mafft.cbrc.jp/alignment/software/). Then, the corresponding nucleotide alignment is obtained using TranslatorX [4]. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed in order to remove line breaks from the resulting alignments. This option is only suitable for FASTA files containing CDS, as indicated by the “codons" suffix.
+This module accepts as input a single CDS FASTA file (sequences must not have stop codons), and returns as output a single sequence alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS transeq feature [3], and an amino acid alignment is obtained using MAFFT (https://mafft.cbrc.jp/alignment/software/). Then, the corresponding nucleotide alignment is obtained using TranslatorX [4]. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed in order to remove line breaks from the resulting alignments. This option is only suitable for FASTA files containing CDS, as indicated by the "codons" suffix.
 
 Probcons
 --------
@@ -29,7 +29,7 @@ This module accepts as input a single nucleotide FASTA file, and using the PROBC
 Probcons_codons
 ---------------
 
-This module accepts as input a single CDS FASTA file (sequences must not have stop codons), and returns as output a single sequence alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS transeq feature [3], and an amino acid alignment is obtained using PROBCONS [http://probcons.stanford.edu/manual.pdf]. Then, the corresponding nucleotide alignment is obtained using TranslatorX [4]. Therefore, this option is only suitable for FASTA files containing CDS, which is indicated by the “codons" suffix. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to reformat files.
+This module accepts as input a single CDS FASTA file (sequences must not have stop codons), and returns as output a single sequence alignment FASTA file. The provided nucleotide sequences are first translated into amino acid sequences using the EMBOSS transeq feature [3], and an amino acid alignment is obtained using PROBCONS [http://probcons.stanford.edu/manual.pdf]. Then, the corresponding nucleotide alignment is obtained using TranslatorX [4]. Therefore, this option is only suitable for FASTA files containing CDS, which is indicated by the "codons" suffix. SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to reformat files.
 
 Probcons_refinement
 -------------------
