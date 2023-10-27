@@ -9,7 +9,7 @@ This module is used to extract from a Newick file all taxa located in a given cl
 Fasttree
 --------
 
-This module accepts as input a single nucleotide sequence alignment FASTA file, and using the Fasttree [5] program, returns as output a tree in Newick format. A generalized time-reversible model of nucleotide evolution with a proportion of invariant sites and a gamma distribution (GTR+I+G) is used. The resulting tree can be rooted using the Root Digger [6] program, by declaring in the config file in two different lines: root=yes and mode="exhaustive" or "early-stop". Please note that Root Digger does not allow white spaces or special characters other than underscores in sequence header names.
+This module accepts as input a single nucleotide sequence alignment FASTA file, and using the Fasttree [5] program, returns as output a tree in Newick format. A generalized time-reversible model of nucleotide evolution with a proportion of invariant sites and a gamma distribution (GTR+I+G) is used.
 
 FastRoot
 --------
