@@ -11,7 +11,7 @@ module for parsing the FASTA files, using SEDA-CLI operations ([1]; https://hub.
 that such module is named my_module and that it is located in the working directory (``/your/data/dir``), it can be
 copied into the Docker image, and then be invoked as any other auto-phylo module, with the following command:
 
-.. code-block:: shell-session
+.. code-block:: docker
 
     docker run --rm \
         -v /your/data/dir:/data \
