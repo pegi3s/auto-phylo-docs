@@ -10,7 +10,7 @@ You can easily install **auto-phylo-pipeliner** by just executing:
 
 .. code-block:: shell-session
 
-    pip install auto-phylo-pipeliner
+   sudo apt-get install python3-tk && pip install auto-phylo-pipeliner
 
 After the installation, you will have the command ``auto-phylo-pipeliner`` available, which will run the application and show the following window.
 
