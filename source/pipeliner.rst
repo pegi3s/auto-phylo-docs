@@ -6,6 +6,9 @@ For more comfortable creation of **auto-phylo** pipelines we have developed **au
 Installation
 ------------
 
+pip
+~~~
+
 You can easily install **auto-phylo-pipeliner** by just executing:
 
 .. code-block:: shell-session
@@ -28,6 +31,9 @@ After the installation, you will have the command ``auto-phylo-pipeliner`` avail
    The command ``pip install auto-phylo-pipeliner`` installs **auto-phylo-pipeliner** only for the current user.
    
    If you want to install **auto-phylo-pipeliner** for all the users, you can run the installation command as root (i.e. ``sudo pip install auto-phylo-pipeliner``). However, executing ``pip`` as root may imply some security risks.
+
+Docker
+~~~~~~
 
 Alternatively, you can use the ``pegi3s/auto-phylo-pipeliner`` Docker image to run it. To do so, invoke the following command: 
 
