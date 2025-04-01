@@ -9,11 +9,14 @@ In addition, it uses Docker images to run any third-party software, thus Docker 
 
 .. Note::
 
-   If you use auto-phylo, please cite this publication:
+   If you use auto-phylo, please cite these publications:
    
    H. López-Fernández; M. Pinto; C.P. Vieira; P. Duque; M. Reboiro-Jato; J. Vieira (2023) `Auto-phylo: A Pipeline Maker 
    for Phylogenetic Studies <https://doi.org/10.1007/978-3-031-38079-2_3>`_. 17th International Conference on Practical Applications of Computational Biology & Bioinformatics: 
    PACBB 2023. Guimarães, Portugal. 12 - July
+   
+   H. López-Fernández; M. Pinto; C. P. Vieira; P. Duque; M. Reboiro-Jato; J. Vieira (2024) `auto-phylo v2 and auto-phylo-pipeliner: 
+   building advanced, flexible, and reusable pipelines for phylogenetic inferences, estimation of variability levels and identification of positively selected amino acid sites <https://doi.org/10.1515/jib-2023-0046>`_. Journal of Integrative Bioinformatics. Volume 21(2), Article Number 20230046. ISSN: 1613-4516
 
 .. _how-to-run:
 
