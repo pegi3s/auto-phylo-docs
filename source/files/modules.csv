@@ -17,7 +17,7 @@ T-coffee,,X,,,,,,,,
 T-coffee_codons,,,X,,,,,,,
 get_phylo_taxa (2 INPUTS),,,,,,,,,X,
 Fasttree,X,X,X,,,,X,,X,X
-FastRoot,,X,,,,X,,,X,X
+Fastroot,,X,,,,X,,,X,X
 Mafft,,X,,,,,,,,
 Mafft_codons,,,X,,,,X,,,
 me_tree,X,,,,,,,,,

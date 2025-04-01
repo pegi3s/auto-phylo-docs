@@ -11,10 +11,10 @@ Fasttree
 
 This module accepts as input a single nucleotide sequence alignment FASTA file, and using the Fasttree [5] program, returns as output a tree in Newick format. A generalized time-reversible model of nucleotide evolution with a proportion of invariant sites and a gamma distribution (GTR+I+G) is used.
 
-FastRoot
+Fastroot
 --------
 
-This module accepts as input one Newick tree file, and using the FastRoot (https://github.com/uym2/MinVar-Rooting) program, returns as output a rooted tree also in Newick format. The rooting method to be used by this module must be specified in the config file (``fastroot_rooting_method=``). The values for this parameter can be either "MV" (Minimum Variance Rooting), "MP" (Midpoint Rooting), or "OG" (Outgroup Rooting). In the latter case, the parameter ``fastroot_outgroup=""`` must be defined in the config file (if present, the value attributed to this parameter is ignored when choosing ``fastroot_rooting_method=MV or MP``). If multiple outgroups are to be chosen, names should be separated by spaces. For instance, ``fastroot_outgroup="Name1 Name2"``.
+This module accepts as input one Newick tree file, and using the Fastroot (https://github.com/uym2/MinVar-Rooting) program, returns as output a rooted tree also in Newick format. The rooting method to be used by this module must be specified in the config file (``fastroot_rooting_method=``). The values for this parameter can be either "MV" (Minimum Variance Rooting), "MP" (Midpoint Rooting), or "OG" (Outgroup Rooting). In the latter case, the parameter ``fastroot_outgroup=""`` must be defined in the config file (if present, the value attributed to this parameter is ignored when choosing ``fastroot_rooting_method=MV or MP``). If multiple outgroups are to be chosen, names should be separated by spaces. For instance, ``fastroot_outgroup="Name1 Name2"``.
 
 me_tree
 -------

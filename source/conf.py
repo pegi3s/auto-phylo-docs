@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = u'auto-phylo-v2'
-copyright = u'2023, Phenotypic Evolution Group and SING Research Group'
+copyright = u'2023-2025, Phenotypic Evolution Group and SING Research Group'
 author = u'Phenotypic Evolution Group and SING Research Group'
 
 # The short X.Y version
-version = u'2.0.0'
+version = u'2.2'
 # The full version, including alpha/beta/rc tags
-release = u''
+release = u'2.2.1'
 
 
 # -- General configuration ---------------------------------------------------
